@@ -4,8 +4,9 @@ local Grid2RightClick = {};
 local Grid2Ace = LibStub("AceAddon-3.0"):GetAddon("Grid2")
 
 
-local MAX_ACCOUNT_MACROS = 120
-local MAX_CHARACTER_MACROS = 30
+local MAX_ACCOUNT_MACROS =  MAX_ACCOUNT_MACROS or Constants.MacroConsts.MAX_ACCOUNT_MACROS 
+local MAX_CHARACTER_MACROS = MAX_CHARACTER_MACROS or Constants.MacroConsts.MAX_CHARACTER_MACROS
+
 
 local addonl = CreateFrame("Frame")
 addonl:RegisterEvent("PLAYER_LOGIN")
